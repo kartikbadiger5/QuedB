@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>HodlInfo</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Top 10 Tickers</h1>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbPwjA6sLKSAEJa3nEZ4xItGI8C2tde7JGdg&s" class="logo">
+        </header>
+        <section class="images-section">
+            <img src="https://www.shutterstock.com/image-illustration/top-7-cryptocurrency-tokens-by-600nw-2152214777.jpg"  class="feature-image">
+            <img src="https://www.shutterstock.com/image-illustration/top-10-mixed-cryptocurrency-tokens-600nw-2455104089.jpg" class="feature-image">
+            
+        </section>
+        <button class="refresh-button">Refresh Data</button>
+        <table class="ticker-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Last</th>
+                    <th>Buy</th>
+                    <th>Sell</th>
+                    <th>Volume</th>
+                    <th>Base Unit</th>
+                </tr>
+            </thead>
+            <tbody id="ticker-data">
+                <!-- Data will be populated here -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

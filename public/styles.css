@@ -1,0 +1,124 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f8ff; /* Light background color */
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  animation: fadeIn 1s ease-in; /* Animation for container */
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #333;
+  font-size: 2.5rem; /* Increased font size */
+  margin-bottom: 10px;
+  animation: slideIn 0.5s ease-out; /* Animation for heading */
+}
+
+.logo {
+  width: 150px; /* Set a width for the logo */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 20px;
+  animation: bounce 1s infinite; /* Logo bounce animation */
+}
+
+.images-section {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.feature-image {
+  width: 100%; /* Full width for smaller screens */
+  max-width: 300px; /* Max width for larger screens */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s; /* Transition for scaling effect */
+}
+
+.feature-image:hover {
+  transform: scale(1.05); /* Scale on hover */
+}
+
+.refresh-button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  margin: 20px 0;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s, transform 0.3s; /* Added transform */
+}
+
+.refresh-button:hover {
+  background-color: #218838;
+  transform: scale(1.05); /* Scale effect on hover */
+}
+
+.ticker-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.ticker-table th, .ticker-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.ticker-table th {
+  background-color: #007bff; /* Header color */
+  color: white;
+  animation: fadeIn 1s ease-in; /* Animation for headers */
+}
+
+.ticker-table tr:hover {
+  background-color: #f1f1f1;
+  transition: background-color 0.3s;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+      transform: translateY(-20px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px);
+  }
+}
